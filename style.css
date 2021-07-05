@@ -1,5 +1,7 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 h1{
@@ -73,4 +75,50 @@ h2{
 }
 .dream big{
     background-image: url(pic/exp-bg.png)
+}
+.service-area{
+	background-color: #fff;
+	padding: 80px 0;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.section-title{
+	text-align: center;
+	color: #2980b9;
+	margin-bottom: 15px;
+	}
+.section-title h2{
+	font-size: 40px;
+}
+.service-content{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between; 
+}
+.service-iteam{
+	width: 32%;
+	position: relative;
+	margin-top: 20px;
+	overflow: hidden;	
+}
+.service-overlay{
+	background-color: rgba(0,0,0,.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;	
+	left: 0;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+	}
+.service-overlay a{
+	color: #FBB03B;
+	font-size: 20px;
+} 
+.service-iteam:hover .service-overlay{
+	top: 0;
 }
